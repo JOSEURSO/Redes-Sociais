@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: normal 20px verdana,
+    arial, tahoma sans-serif;
+}
+
+body, html{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #282828;
+}
+
+#icons{
+    width: 220px;
+    height: auto;
+    position: absolute;
+    top: 30%;
+    left: -150px;
+}
+
+#icons ul{
+    list-style: none;
+}
+
+#icons ul li{
+    display: block;
+    background: #131313;
+    padding: 10px;
+    height: 50px;
+    position: relative;
+    transition:  all 0.5s ease;
+}
+
+
+#icons ul li a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+#icons ul li:nth-child(1){
+background: red;
+}
+
+#icons ul li:nth-child(2){
+background: rgb(44, 6, 212);
+}
+
+#icons ul li:nth-child(3){
+background: rgb(231, 5, 118);
+}
+
+#icons ul li span{
+position: absolute;
+top: 0;
+bottom: 0;
+display: block;
+right: 18px;
+padding: 10px;
+}
+
+#icons ul li:hover{
+    cursor: pointer;
+    background: #131313;
+    opacity: 0.8;
+    border-left: 10px solid #fff;
+    transform: translateX(150px);
+}
